@@ -1,0 +1,21 @@
+openai:
+  openai_api_base: "https://openai.com" # openai代理地址,默认
+  openai_api_key: "sk-xxxxxxxxxxxxxxx" 
+  chat_model: "gpt-4"  
+  embedding_model: "text-embedding-3-small" 
+  langsmith_api_key: "xxxxxxxxxxxxxxx" # langsmith的api key， 可选
+  
+# chromaDB向量数据库设置  
+chromaDB:  
+  directory: "./chromaDB"  
+  collection_name: "demo001"  
+  
+# prompt模版设置  
+prompt_templates:  
+  system: "./prompt_template.txt"   
+  
+  
+# API服务设置  
+api_service:  
+  host: "127.0.0.1"
+  port: 8012
