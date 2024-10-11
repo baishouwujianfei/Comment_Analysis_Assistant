@@ -11,7 +11,6 @@ import asyncio
 import uuid
 import time
 import logging
-import sys
 from contextlib import asynccontextmanager
 from pydantic import BaseModel, Field
 from typing import List, Optional, Dict
@@ -19,8 +18,7 @@ from langchain_openai import ChatOpenAI
 from tools.getConfig import GetConfig
 from tools.argument_parser import ArgumentParser
 from tools import excelSplit
-import chardet
-import pandas as pd
+
 
 # prompt模版
 from langchain_core.prompts import PromptTemplate
